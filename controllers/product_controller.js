@@ -1,6 +1,6 @@
 const Product = require('../model/product');
 
-
+// creating a product
 module.exports.createProduct = async (req,res)=>{
     
     try {
@@ -13,6 +13,8 @@ module.exports.createProduct = async (req,res)=>{
     }
 }
 
+
+// Getting the products
 module.exports.fetchProducts = async (req,res)=>{
 
     try {
@@ -26,6 +28,9 @@ module.exports.fetchProducts = async (req,res)=>{
 
 
 } 
+
+
+// Get one Product
 module.exports.fetchOneProduct = async (req,res)=>{
 
     try {
@@ -37,7 +42,11 @@ module.exports.fetchOneProduct = async (req,res)=>{
         res.status(400).send({ message: "error" })
     }
 
-} 
+
+}
+
+
+// Delete a product
 module.exports.deleteProduct = async (req,res)=>{
 
     try {
@@ -49,7 +58,10 @@ module.exports.deleteProduct = async (req,res)=>{
         res.status(400).send({ message: "error" })
     }
 
-} 
+}
+
+
+// Update a product
 module.exports.updateProduct = async (req,res)=>{
 
     try {

@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/E-commerce_API_db');
+mongoose.connect('mongodb+srv://aditya:aditya123@cluster0.7kvvg.mongodb.net/E-commerce_API_db');
 
 
 const db = mongoose.connection;

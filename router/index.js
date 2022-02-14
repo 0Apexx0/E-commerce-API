@@ -1,9 +1,11 @@
 const express = require('express');
-const Product = require('../model/product');
-const Counter = require('../model/id_counter');
 const router = express.Router();
 const productController = require('../controllers/product_controller')
 
+router.get('/' , (req,res)=>{
+    res.header('Content-type', 'text/html');
+    return res.end('<h1>Get Started :</h1><ul><li>Open Postman start sending request on "(above url)/product</li></ul>');
+});
 
 //create a new Product
 router.post('/product', productController.createProduct );
